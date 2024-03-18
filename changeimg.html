@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background</title>
+</head>
+<style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    img{
+        height: 80%;
+        width: 100%;
+    }
+        
+        input {
+            background-color: #fffeff;
+            border: 1px solid black;
+            border-radius: 15px;
+            font-size: 20px;
+            color: rgb(14, 12, 12);
+            padding: 10px;
+            text-align: center;
+            margin-top: 20%;
+            margin-left: 45%; 
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            position: absolute;
+            cursor: pointer;
+
+        }
+  
+</style>
+
+<body>
+
+    <input type="button" value="Change Background" onclick="changeBackground()">
+    
+      <img src="./img/j3.jpg" id="chbg" alt="">
+
+    <script>
+        function changeBackground(){
+            document.getElementById('chbg').src='./img/p.jpg'
+        }
+
+//         function changeBackground(){
+//     document.body.style.background ='black';
+// }
+    </script>
+</body>
+
+</html>
